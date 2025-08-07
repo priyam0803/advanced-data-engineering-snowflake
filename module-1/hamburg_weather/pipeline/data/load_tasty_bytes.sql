@@ -57,7 +57,7 @@ raw zone table build
 -- country table build
 
 -- todo: complete table build
-CREATE TABLE {{env}}_tasty_bytes.raw_pos.country
+CREATE OR ALTER TABLE {{env}}_tasty_bytes.raw_pos.country
 (
    country_id NUMBER(18,0),
    country VARCHAR(16777216),
@@ -65,7 +65,7 @@ CREATE TABLE {{env}}_tasty_bytes.raw_pos.country
    iso_country VARCHAR(2),
    city VARCHAR(16777216),
    city_population VARCHAR(16777216),
-   city id number(19,0)
+   city_id number(19,0)
 );
 
 
